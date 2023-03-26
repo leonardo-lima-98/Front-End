@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/flexbox_icon_favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container flex-direction-column align-center">
+      <h1>Flexbox</h1>
+      <h3>Propriedades de gabarito do Flexbox</h3>
+      <div class="subcontainer flex-direction-column">
+        <p>
+          Por default o Flexbox vem configurado com o alinhamento à direita em
+          linha.
+        </p>
+        <div class="desc">
+          <div class="box">Item 1</div>
+          <div class="box">Item 2</div>
+          <div class="box">Item 3</div>
+        </div>
+      </div>
+      <div class="subcontainer flex-direction-column">
+        <p>Podemos justificar o conteudo ao centro.</p>
+        <div class="desc flex-direction-row justify-center">
+          <div class="box">Item 1</div>
+          <div class="box">Item 2</div>
+          <div class="box">Item 3</div>
+        </div>
+      </div>
+      <div class="subcontainer flex-direction-column">
+        <p>Podemos justificar o conteudo ao final.</p>
+        <div class="desc flex-direction-row justify-end">
+          <div class="box">Item 1</div>
+          <div class="box">Item 2</div>
+          <div class="box">Item 3</div>
+        </div>
+      </div>
+      <div class="subcontainer flex-direction-column">
+        <p>
+          Podemos justificar o conteudo com o espaço inutilizado onde o mesmo é
+          dividido em 3 partes sendo 1 delas divida em 2 partes sendo colocadas
+          nas pontas ao inicio e o fim.
+        </p>
+        <div class="desc flex-direction-row justify-space-around">
+          <div class="box">Item 1</div>
+          <div class="box">Item 2</div>
+          <div class="box">Item 3</div>
+        </div>
+      </div>
+      <div class="subcontainer flex-direction-column">
+        <p>
+          Podemos justificar o conteudo com o espaço inutilizado onde o mesmo é
+          dividido em 2 partes sendo colocado entre os itens.
+        </p>
+        <div class="desc flex-direction-row justify-space-between">
+          <div class="box">Item 1</div>
+          <div class="box">Item 2</div>
+          <div class="box">Item 3</div>
+        </div>
+      </div>
+      <div class="subcontainer flex-direction-column">
+        <p>
+          Podemos mudar a orientação dos objetos para coluna e ainda acresentar
+          as configurações anteriores de alinhamento.
+        </p>
+        <div class="desc flex-direction-column">
+          <div class="box">Item 1</div>
+          <div class="box">Item 2</div>
+          <div class="box">Item 3</div>
+        </div>
+      </div>
+      <div class="subcontainer flex-direction-column">
+        <p>
+          Podemos mudar a reverter a apresentação do conteudo e ainda acresentar
+          as configurações anteriores de justificativas.
+        </p>
+        <div class="desc flex-direction-column-reverse">
+          <div class="box">Item 1</div>
+          <div class="box">Item 2</div>
+          <div class="box">Item 3</div>
+        </div>
+      </div>
+      <div class="subcontainer flex-direction-column">
+        <p>
+          Podemos mudar a reverter a apresentação do conteudo e ainda acresentar
+          as configurações anteriores de justificativas.
+        </p>
+        <div class="desc flex-direction-row-reverse">
+          <div class="box">Item 1</div>
+          <div class="box">Item 2</div>
+          <div class="box">Item 3</div>
+        </div>
+      </div>
+      <div class="subcontainer flex-direction-column">
+        <p>Podemos alinhar a orientação e disposição do conteudo.</p>
+        <div class="desc flex-direction-row">
+          <div class="box align-start justify-center">Item 1</div>
+          <div class="box align-center justify-center">Item 2</div>
+          <div class="box align-end justify-center">Item 3</div>
+        </div>
+      </div>
+      <div class="subcontainer flex-direction-column">
+        <p>
+          Podemos com a função Wrap forçar a quebra de linha para que os objetos
+          não transpacem os limites.
+        </p>
+        <div class="desc flex-direction-row flex-wrap-wrap">
+          <div class="box">Item 1</div>
+          <div class="box">Item 2</div>
+          <div class="box">Item 3</div>
+          <div class="box">Item 4</div>
+          <div class="box">Item 5</div>
+          <div class="box">Item 6</div>
+          <div class="box">Item 7</div>
+          <div class="box">Item 8</div>
+          <div class="box">Item 9</div>
+          <div class="box">Item 10</div>
+          <div class="box">Item 11</div>
+          <div class="box">Item 12</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

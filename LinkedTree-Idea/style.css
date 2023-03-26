@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(#0c192cf3, #3a3939ef);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 0px;
+}
+
+.stars {
+  position: absolute;
+  display: flex;
+}
+
+.stars span {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  margin: 0 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #85848044, 0 0 50px #c0bfbf, 0 0 100px #ffffff;
+  animation: animar calc(90s / var(--i)) linear infinite;
+}
+
+.stars2 {
+  position: absolute;
+  display: flex;
+}
+
+.stars2 span {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  margin: 0 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #85848044, 0 0 50px #c0bfbf, 0 0 100px #ffffff;
+  animation: animar2 calc(135s / var(--i)) linear infinite;
+}
+
+.image-perfil {
+  display: block;
+  margin: 20px auto;
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-perfil img {
+  position: absolute;
+  width: 100%;
+}
+
+@keyframes animar {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(0.7);
+  }
+}
+
+@keyframes animar2 {
+  0% {
+    transform: translateY(-10vh) scale(0);
+  }
+  100% {
+    transform: translateY(100vh) scale(0.7);
+  }
+}
+
+.stars span:nth-of-type(even) {
+  background: #fff;
+  box-shadow: 0 0 0 10px #85848044, 0 0 50px #c0bfbf, 0 0 100px #ffffff;
+}
+
+.stars2 span:nth-of-type(even) {
+  background: #fff;
+  box-shadow: 0 0 0 10px #85848044, 0 0 50px #c0bfbf, 0 0 100px #ffffff;
+}
+
+.flex-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.flex-item {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  color: #ffffff;
+  font-family: Helvetica;
+  width: 500px;
+  font-weight: 700;
+  background-color: #ffffff00;
+  text-shadow: 1px 1px 15px #000000;
+  border: solid #b1b1b1 3px;
+  display: flex;
+  cursor: pointer;
+  margin: 0px 5px 10px 5px;
+  height: 65px;
+}
+
+.flex-item:hover {
+  background: #b1b1b165;
+}
+
+.name {
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 22px;
+  width: 500px;
+  min-width: 300px;
+  font-weight: 700;
+  background-color: #ffffff00;
+  text-shadow: 5px 5px 10px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  cursor: pointer;
+  margin: 0px 5px 0px 5px;
+  height: 40px;
+}
+
+.social_icons {
+  color: #ffffff;
+  font-family: Helvetica;
+  width: 500px;
+  min-width: 300px;
+  font-weight: 700;
+  background-color: #ffffff00;
+  text-shadow: 5px 5px 5px #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin: 5px 5px 10px 5px;
+  height: 40px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 50px;
+  height: 130px;
+}
+
+.a {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  /* background: #eeff0080; */
+  align-items: center;
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+.svg_icons {
+  display: inherit;
+  justify-content: flex-start;
+  /* background: #ff000080; */
+}
+
+.decription {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Helvetica;
+  /* background: #00ff0080; */
+  flex-grow: 4;
+}
+.decription h1 {
+  display: inherit;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 22px;
+  text-shadow: 5px 5px 12px #000000;
+  /* background: #ff04a080; */
+  flex-grow: 4;
+}
+.decription p {
+  display: inherit;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 12px;
+  text-shadow: 5px 5px 12px #000000;
+  /* background: #00fff080; */
+  flex-grow: 4;
+}

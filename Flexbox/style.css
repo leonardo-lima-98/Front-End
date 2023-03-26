@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: burlywood;
+}
+
+.subcontainer {
+  width: 800px;
+  display: flex;
+  margin: 2px;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: blanchedalmond;
+}
+
+.desc {
+  margin: 2px;
+  border: 1px solid black;
+  padding: 2px;
+  display: flex;
+}
+
+.box {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  background-color: orange;
+  margin: 10px;
+  border: 1px solid black;
+  font-size: 1rem;
+  padding: 0px;
+}
+
+/* Justify Content Classes */
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+/* Align Items Classes */
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-space-between {
+  align-items: space-between;
+}
+
+.align-space-around {
+  align-items: space-around;
+}
+
+/* Flex Direction Classes */
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* Flex Wrap Classes */
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-wrap-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-nowrap-reverse {
+  flex-wrap: nowrap-reverse;
+}
