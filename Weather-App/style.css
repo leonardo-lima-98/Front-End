@@ -6,9 +6,7 @@
   --bgColorInput: #ebfffc;
   --whiteColor: #ffffff;
   --fontColor: #555;
-  --primaryColor2: #b54769;
   --imgBG: url(img/background.png);
-  --imgBG-phone: url(img/phone-background.png);
   --fontStyle: "Poppins", sans-serif;
 }
 * {
