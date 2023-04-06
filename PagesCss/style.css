@@ -14,6 +14,7 @@
   --grey: #eeeeee;
   --dark-grey: #aaaaaa;
   --dark: #342e37;
+  --wood: #8b5a2b;
   --red: #db504a;
   --yellow: #ffce26;
   --light-yellow: #fff2c6;
@@ -58,17 +59,19 @@ body {
   display: flex;
   position: relative;
   width: 65%;
-  left: 0;
+  left: 50px;
   height: 80%;
-  background: var(--light);
+  /* background: var(--light); */
   z-index: 999;
+  animation: apparence 2s;
+  transition: all 2s;
 }
 .morty {
   display: block;
   position: relative;
   height: 100%;
   width: 60%;
-  background: var(--green);
+  /* background: var(--green); */
   left: 0;
 }
 .hood {
@@ -98,8 +101,8 @@ body {
   height: 57px;
 }
 .face {
-  display: flex;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   text-align: center;
   padding: 10px 15px;
@@ -108,6 +111,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 40% 40% 20% 20%;
+  border: 2px solid var(--dark-grey);
 }
 .eyes {
   justify-self: center;
@@ -115,22 +119,93 @@ body {
   height: 20px;
   border-radius: 50%;
   background: #342e37;
+  border: 1px solid var(--dark-grey);
 }
 .theeths {
-  bottom: -10px;
+  position: absolute;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-self: center;
-  width: 20px;
+  top: 48px;
+  gap: 4px;
+  justify-content: center;
+  width: 75%;
   height: 20px;
-  /* border-radius: 50%; */
+  margin: 0 auto;
   z-index: 9999;
-  /* background: #342e37; */
+  margin-left: 11px;
 }
 .theeth {
-  position: absolute;
+  position: relative;
   width: 10px;
-  height: 30px;
+  height: 20px;
+  border: 2px solid var(--dark-grey);
   background: var(--light-orange);
+}
+.sickle {
+  position: relative;
+  left: -260px;
+  bottom: -40px;
+  height: 60%;
+  width: 80px;
+  /* background: var(--red); */
+  z-index: 99999;
+  transform: rotate(-15deg);
+  transition: animation 5s;
+  animation: walking 1s;
+}
+@keyframes walking {
+  0% {
+    transform: rotate(-16deg);
+    left: -310px;
+  }
+  25% {
+    transform: rotate(-12deg);
+    left: -300px;
+  }
+  50% {
+    transform: rotate(-8deg);
+    left: -290px;
+  }
+  75% {
+    transform: rotate(-12deg);
+    left: -280px;
+  }
+  100% {
+    transform: rotate(-16deg);
+    left: -270px;
+  }
+}
+.cable {
+  position: absolute;
+  height: 90%;
+  width: 10px;
+  background: var(--wood);
+  right: 0;
+  bottom: 0;
+}
+.sickle-head {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  border: solid;
+  margin-top: 0.5px;
+  border-color: var(--dark-grey) var(--transparet) var(--transparet)
+    var(--transparet);
+  border-width: 20px 0px 10px 80px;
+}
+
+@keyframes apparence {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 50px;
+  }
+}
+
+.card-note {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  z-index: -99;
 }
